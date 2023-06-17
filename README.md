@@ -25,3 +25,9 @@ queue.
 8. There are  mechanics available
 9. It is left to the candidate to decide on how the queue is handled and mechanics are assigned
 and create the algorithm accordingly.
+SNAPSHOTS:
+NEW ISSUE
+![WhatsApp Image 2023-06-17 at 11 36 25 PM](https://github.com/sindhuBasavaraj/Django-for-mechanic-assigning/assets/136879242/aca1d236-3e81-4b9e-aa88-ca0a233fa99d)
+SUCCESS
+![WhatsApp Image 2023-06-17 at 11 36 48 PM](https://github.com/sindhuBasavaraj/Django-for-mechanic-assigning/assets/136879242/619a265b-f117-403c-b11f-1730cf110459)
+
