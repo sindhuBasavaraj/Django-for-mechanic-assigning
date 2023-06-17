@@ -14,15 +14,18 @@
         h1 {
             color: #333;
             margin-bottom: 20px;
+            text-align: center;
         }
 
         h2 {
             color: #333;
-            margin-top: 30px;
+            margin-top: 20px;
+            font-size: 18px;
         }
 
         p {
             margin: 10px 0;
+            font-size: 16px;
         }
 
         .container {
@@ -33,25 +36,50 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
         }
+
+        .info-section {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+        }
+
+            .info-section:last-child {
+                margin-bottom: 0;
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+
+            .info-section h2 {
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Success!</h1>
-        <p>Issue ID: {{ issue.issueID }}</p>
-        <p>User ID: {{ issue.userID }}</p>
-        <p>Location: {{ issue.location }}</p>
-        <p>Problem: {{ issue.problem }}</p>
-        <p>Time: {{ issue.time }}</p>
-        <p>Status: {{ issue.status }}</p>
 
-        <h2>Assigned Agent</h2>
-        <p>Agent ID: {{ agent.agentID }}</p>
-        <p>Queue: {{ agent.queue }}</p>
+        <div class="info-section">
+            <h2>Issue Details</h2>
+            <p><strong>Issue ID:</strong> {{ issue.issueID }}</p>
+            <p><strong>User ID:</strong> {{ issue.userID }}</p>
+            <p><strong>Location:</strong> {{ issue.location }}</p>
+            <p><strong>Problem:</strong> {{ issue.problem }}</p>
+            <p><strong>Time:</strong> {{ issue.time }}</p>
+            <p><strong>Status:</strong> {{ issue.status }}</p>
+        </div>
 
-        <h2>Assigned Mechanic</h2>
-        <p>Mechanic ID: {{ mechanic.mechanicID }}</p>
-        <p>Availability: {{ mechanic.availability }}</p>
+        <div class="info-section">
+            <h2>Assigned Agent</h2>
+            <p><strong>Agent ID:</strong> {{ agent.agentID }}</p>
+            <p><strong>Queue:</strong> {{ agent.queue }}</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Assigned Mechanic</h2>
+            <p><strong>Mechanic ID:</strong> {{ mechanic.mechanicID }}</p>
+            <p><strong>Availability:</strong> {{ mechanic.availability }}</p>
+        </div>
     </div>
 </body>
 </html>
